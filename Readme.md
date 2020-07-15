@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Уртемаш](https://up.htmlacademy.ru/adaptive/20/user/1455563).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
