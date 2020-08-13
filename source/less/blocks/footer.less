@@ -1,10 +1,17 @@
 .footer {
-    background-color: #ffffff;
-    color: #000000;
-    font-family: PT Sans, Arial, sans-serif;
-    font-style: normal;
-    text-align: center;
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+.footer {
+  display: flex;
+  flex-direction: row;
+}
 }
