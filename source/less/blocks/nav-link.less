@@ -1,6 +1,27 @@
 .nav-link {
-    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-    list-style-type: none;
-    text-decoration: none;
-    color: #ffffff;
+  border-bottom: 1px solid var(--dark-opacity);
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--basic-white);
+  width: 100%;
+}
+
+
+
+@media (min-width: @tablet-width) {
+.nav-link {
+  width: 20%;
+  color: var(--basic-black);
+}
+
+.nav-link:hover {
+color: var(--basic-blue);
+}
+.nav-link:focus {
+color: var(--basic-black);
+opacity: 0.3;
+}
+.nav-link:active {
+color: var(--basic-brown);
+}
 }
