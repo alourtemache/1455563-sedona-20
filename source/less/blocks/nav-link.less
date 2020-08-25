@@ -1,8 +1,8 @@
 .nav-link {
-  border-bottom: 1px solid var(--dark-opacity);
+  border-bottom: 1px solid @dark-opacity;
   list-style-type: none;
   text-decoration: none;
-  color: var(--basic-white);
+  color: @basic-white;
   width: 100%;
 }
 
@@ -11,17 +11,17 @@
 @media (min-width: @tablet-width) {
 .nav-link {
   width: 20%;
-  color: var(--basic-black);
+  color: @basic-black;
 }
 
 .nav-link:hover {
-color: var(--basic-blue);
+  color: @basic-blue;
 }
 .nav-link:focus {
-color: var(--basic-black);
-opacity: 0.3;
+  color: @basic-black;
+  opacity: 0.3;
 }
 .nav-link:active {
-color: var(--basic-brown);
+  color: @basic-brown;
 }
 }

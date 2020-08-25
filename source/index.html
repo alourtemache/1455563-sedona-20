@@ -5,10 +5,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, путешествие">
     <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего">
-    <!--
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-  -->
     <title> SEDONA </title>
 
   </head>
@@ -33,15 +31,20 @@
           </ul>
         </nav>
         <a href="index.html" class="main-page-logo">
-          <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
+          </picture>
         </a>
         <button type="submit" class="burger"></button>
       </header>
 
       <main class="main-page">
-        <div class="greeting">
+        <picture class="greeting">
+          <source media="(min-width: 1200px)">
           <img src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome to Sedona">
-        </div>
+        </picture>
 
 
         <div class="town">
@@ -75,11 +78,15 @@
               <span> ТЕЧЁТ СВОЯ ЖИЗНЬ</span>
             </p>
           </div>
-          <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+          <picture class="main-city">
+            <source media="(min-width: 1200px)" srcset="img/main-city-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/main-city-tablet.svg">
+            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+          </picture>
         </div>
 
         <div class="life-in">
-          <div class="icon">
+          <div class="icon icon--housing">
             <img src="img/icon-house.svg" width="39" height="37" alt="Жильё">
             <p class="title">
               <b>ЖИЛЬЁ</b>
@@ -92,7 +99,7 @@
               <span> КИНО!</span>
             </p>
           </div>
-          <div class="icon">
+          <div class="icon icon--food">
             <img src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
             <p class="title">
               <b>СУВЕНИРЫ</b>
@@ -103,7 +110,7 @@
               <span>МЕСТНОГО ПРОИЗВОДСТВА!</span>
             </p>
           </div>
-          <div class="icon">
+          <div class="icon icon--souvenir">
             <img src="img/icon-burger.svg" width="40" height="35" alt="Еда">
             <p class="title">
               <b>ЕДА</b>
@@ -131,10 +138,14 @@
               <span> ОСМЕЛИТЕСЬ, КОНЕЧНО </span>
             </p>
           </div>
-          <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+          <picture class="main-bridge">
+            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet.svg">
+            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+          </picture>
         </div>
         <div class="town-features">
-          <div class="town-features-item">
+          <div class="town-features-item town-features-item--area">
             <p class="town-title">
               <b>
                 НЕБОЛЬШАЯ ПЛОЩАДЬ
@@ -149,7 +160,7 @@
               <span>ОЧЕНЬ БЛИЗКО</span>
             </p>
           </div>
-          <div class="town-features-item">
+          <div class="town-features-item town-features-item--road">
             <p class="town-title">
               <b>
                 КРАСИВАЯ ДОРОГА
@@ -164,7 +175,7 @@
               <span> СОВСЕМ НЕ СКУЧНО! </span>
             </p>
           </div>
-          <div class="town-features-item">
+          <div class="town-features-item town-features-item--tourist">
             <p class="town-title">
               <b>
                 МАЛО ТУРИСТОВ
@@ -201,7 +212,7 @@
           </div>
         </div>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419120.60621330905!2d-112.0012613!3d34.8466846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sdz!4v1592320038511!5m2!1sen!2sdz" width="320" height="350" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0" title="Карта местоположения города"></iframe>
+        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419120.60621330905!2d-112.0012613!3d34.8466846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sdz!4v1592320038511!5m2!1sen!2sdz" width="320" height="350" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0" title="Карта местоположения города"></iframe>
       </main>
 
       <footer class="page-footer">
@@ -239,3 +250,4 @@
   </body>
 
 </html>
+

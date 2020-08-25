@@ -1,7 +1,13 @@
 .interest {
-    background-color: #ffffff;
-    font-family: PT Sans, Arial, sans-serif;
-    padding: 0 1px;
-    text-align: center;
-    text-transform: uppercase;
+  background-color: @basic-white;
+  padding: 0 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media(min-width: @tablet-width) {
+.interest {
+  grid-column: 1/4;
+  grid-row: 7/8;
+}
 }

@@ -1,15 +1,24 @@
 .page-header {
-    background-color: #81B3D2;
-    font-family: PT Sans, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 40px;
-    padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
+  background-color: @basic-blue;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
+
 .burger {
-    background-image: url(../source/img/icon-menu.svg);
+  background-image: url(../source/img/icon-menu.svg);
+  display: flex;
+  align-self: flex-end;
+}
+
+@media (min-width: @tablet-width) {
+.burger {
+  display: none;
+}
 }
