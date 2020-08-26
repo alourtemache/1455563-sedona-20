@@ -5,10 +5,8 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Седона, путешествие">
     <meta name="description" content="Седона - небольшой городок в Аризоне, заслуживающий большего">
-    <!--
-    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="stylesheet" href="css/style.css">
-  -->
     <title> Отзыв о Седоне </title>
 
   </head>
@@ -33,7 +31,11 @@
           </ul>
         </nav>
         <a href="index.html" class="main-page-logo">
-          <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
+          </picture>
         </a>
         <button type="submit" class="burger"></button>
       </header>
