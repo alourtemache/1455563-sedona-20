@@ -1,26 +1,27 @@
 .search-wrapper {
     display: block;
     margin: 0 auto;
-    padding: 30px 0;
+    margin-bottom: 49px;
+    padding-top: 30px;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    background-color: var(--basic-blue);
+    background-color: @basic-blue;
     width: 280px;
     height: 58px;
     left: 20px;
 }
 
 .search-wrapper:hover {
-  background-color: var(--hover-blue);
+  background-color: @hover-blue;
 }
 
 .search-wrapper:active {
-  background-color: var(--dark-blue);
+  background-color: @dark-blue;
 }
 
 .search-wrapper:disabled {
-  background-color: var(--border-gray);
+  background-color: @border-gray;
 }
 
 @media (min-width: @tablet-width) {

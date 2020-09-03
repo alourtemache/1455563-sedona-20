@@ -15,20 +15,22 @@
     <div class="container">
       <header class="page-header">
         <nav>
+          <div class="page-header--wrapper">
           <ul class="navigation">
-            <li>
+            <li class="navigation-block">
               <a href="index.html" class="nav-link"> ГЛАВНАЯ </a>
             </li>
-            <li>
+            <li class="navigation-block">
               <a href="photo.html" class="nav-link"> ФОТО И ВИДЕО </a>
             </li>
-            <li>
+            <li class="navigation-block">
               <a href="form.html" class="nav-link">ФОРМА ОТЗЫВА</a>
             </li>
-            <li>
+            <li class="navigation-block">
               <a href="htmlacademy.ru" class="nav-link">HTML ACADEMY </a>
             </li>
           </ul>
+          </div>
         </nav>
         <a href="index.html" class="main-page-logo">
           <picture>
@@ -37,14 +39,15 @@
             <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
           </picture>
         </a>
-        <button type="submit" class="burger"></button>
+        <div class="burger"></div>
       </header>
 
       <main class="main-page">
-        <picture class="greeting">
-          <source media="(min-width: 1200px)">
+        <div class="greeting">
+        <picture class="greeting-text">
           <img src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome to Sedona">
         </picture>
+        </div>
 
 
         <div class="town">
@@ -63,8 +66,9 @@
           </p>
         </div>
 
+        <span class="triangle"></span>
+
         <div class="truetown">
-          <span class="triangle"></span>
           <div class="truetown-text">
             <h3 class="advantages">
               НАСТОЯЩИЙ ГОРОДОК
@@ -78,11 +82,13 @@
               <span> ТЕЧЁТ СВОЯ ЖИЗНЬ</span>
             </p>
           </div>
-          <picture class="main-city">
+          <div class="main-city">
+          <picture>
             <source media="(min-width: 1200px)" srcset="img/main-city-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/main-city-tablet.svg">
-            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона">
+            <img src="img/main-city-mobile@1x.jpg" width="100%" height="auto" alt="Седона">
           </picture>
+          </div>
         </div>
 
         <div class="life-in">
@@ -124,6 +130,7 @@
             </p>
           </div>
         </div>
+
         <div class="bridge">
           <div class="devil-bridge">
             <h3 class="advantages">
@@ -138,12 +145,15 @@
               <span> ОСМЕЛИТЕСЬ, КОНЕЧНО </span>
             </p>
           </div>
-          <picture class="main-bridge">
+          <div class="main-bridge">
+          <picture>
             <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/main-bridge-tablet.svg">
-            <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+            <img src="img/main-bridge-mobile@1x.jpg" width="100%" height="auto" alt="Мост дьявола">
           </picture>
+          </div>
         </div>
+
         <div class="town-features">
           <div class="town-features-item town-features-item--area">
             <p class="town-title">

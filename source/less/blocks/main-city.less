@@ -1,6 +1,13 @@
-@media(min-width: @tablet-width) {
-.main-city {
-    grid-column: 2/4;
-    grid-row: 3/4;
+@media(max-width: @mobile-width) {
+  .main-city {
+      align-content: center;
+    }
   }
-}
+
+
+@media(min-width: @tablet-width) {
+  .main-city {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
