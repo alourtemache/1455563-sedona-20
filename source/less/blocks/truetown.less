@@ -3,11 +3,14 @@
     background-color: @basic-blue;
 }
 
-.truetown-text {
-    color: @basic-white;
-    padding: 0 1px;
-    text-align: center;
-    text-transform: uppercase;
+@media(min-width: @tablet-width) {
+  .truetown-text {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 256px;
+  }
 }
 
 @media(min-width: @tablet-width) {

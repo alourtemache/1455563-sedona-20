@@ -1,24 +1,13 @@
 .page-header {
-    background-color: @basic-blue;
-    font-family: PT Sans, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 40px;
-    padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  background-color: @basic-blue;
+  color: @basic-white;
 }
 
-
-.burger {
-    background-image: url(../source/img/icon-menu.svg);
-    display: flex;
-    align-self: flex-end;
-}
-
-@media (min-width: @tablet-width) {
-  .burger {
-    display: none;
-  }
+.main-page--wrapper {
+display: flex;
+justify-content: space-between;
+width: 640px;
+margin: 0 auto;
 }

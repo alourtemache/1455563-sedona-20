@@ -1,10 +1,35 @@
-.burger {
-    background-color: var(--basic-white);
+@media(max-width: @mobile-width) {
+  .burger {
     width: 23px;
-    height: 22px;
-    padding: 17px 20px;
+    height: 4px;
+    background-color: @basic-blue;
+    position: relative;
+  }
+
+  .burger::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 4px;
+    background-color: @basic-blue;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+  }
+  .burger::after {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 4px;
+    background-color: @basic-blue;
+    position: absolute;
+    left: 40px;
+    top: -5px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  display: none;
+  .burger {
+    display: none;
+  }
 }
