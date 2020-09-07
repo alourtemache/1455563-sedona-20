@@ -3,6 +3,14 @@
   width: 100%;
 }
 
+@media (max-width: @mobile-width) {
+  .icon {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .icon {
     text-align: center;

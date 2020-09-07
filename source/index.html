@@ -16,20 +16,20 @@
       <header class="page-header">
         <nav>
           <div class="page-header--wrapper">
-          <ul class="navigation">
-            <li class="navigation-block">
-              <a href="index.html" class="nav-link"> ГЛАВНАЯ </a>
-            </li>
-            <li class="navigation-block">
-              <a href="photo.html" class="nav-link"> ФОТО И ВИДЕО </a>
-            </li>
-            <li class="navigation-block">
-              <a href="form.html" class="nav-link">ФОРМА ОТЗЫВА</a>
-            </li>
-            <li class="navigation-block">
-              <a href="htmlacademy.ru" class="nav-link">HTML ACADEMY </a>
-            </li>
-          </ul>
+            <ul class="navigation">
+              <li class="navigation-block">
+                <a href="index.html" class="nav-link"> ГЛАВНАЯ </a>
+              </li>
+              <li class="navigation-block">
+                <a href="photo.html" class="nav-link"> ФОТО И ВИДЕО </a>
+              </li>
+              <li class="navigation-block">
+                <a href="form.html" class="nav-link">ФОРМА ОТЗЫВА</a>
+              </li>
+              <li class="navigation-block">
+                <a href="htmlacademy.ru" class="nav-link">HTML ACADEMY </a>
+              </li>
+            </ul>
           </div>
         </nav>
         <a href="index.html" class="main-page-logo">
@@ -44,9 +44,13 @@
 
       <main class="main-page">
         <div class="greeting">
-        <picture class="greeting-text">
-          <img src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome to Sedona">
-        </picture>
+          <div class="greeting-back"></div>
+          <div class="greeting-text greeting-text--form">
+            <picture>
+              <img src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
+            </picture>
+          </div>
+          <div class="triangle-main"></div>
         </div>
 
 
@@ -83,51 +87,63 @@
             </p>
           </div>
           <div class="main-city">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-city-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/main-city-tablet.svg">
-            <img src="img/main-city-mobile@1x.jpg" width="100%" height="auto" alt="Седона">
-          </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet.svg">
+              <img src="img/main-city-mobile@1x.jpg" width="100%" height="auto" alt="Седона">
+            </picture>
           </div>
         </div>
 
         <div class="life-in">
           <div class="icon icon--housing">
-            <img src="img/icon-house.svg" width="39" height="37" alt="Жильё">
-            <p class="title">
-              <b>ЖИЛЬЁ</b>
-            </p>
-            <p class="description">
-              <span>РЕКОМЕНДУЕМ ПОЖИТЬ В </span>
-              <br>
-              <span>НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В </span>
-              <br>
-              <span> КИНО!</span>
-            </p>
+            <div class="icon-image">
+              <img src="img/icon-house.svg" width="39" height="37" alt="Жильё">
+            </div>
+            <div class="icon-text">
+              <p class="title">
+                <b>ЖИЛЬЁ</b>
+              </p>
+              <p class="description">
+                <span>РЕКОМЕНДУЕМ ПОЖИТЬ В </span>
+                <br>
+                <span>НАСТОЯЩЕМ МОТЕЛЕ, ВСЕ КАК В </span>
+                <br>
+                <span> КИНО!</span>
+              </p>
+            </div>
           </div>
           <div class="icon icon--food">
-            <img src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
-            <p class="title">
-              <b>СУВЕНИРЫ</b>
-            </p>
-            <p class="description">
-              <span>НЕ ТОЛЬКО КИТАЙСКОГО, НО И </span>
-              <br>
-              <span>МЕСТНОГО ПРОИЗВОДСТВА!</span>
-            </p>
+            <div class="icon-image">
+              <img src="img/icon-gift.svg" width="32" height="38" alt="Сувениры">
+            </div>
+            <div class="icon-text">
+              <p class="title">
+                <b>СУВЕНИРЫ</b>
+              </p>
+              <p class="description">
+                <span>НЕ ТОЛЬКО КИТАЙСКОГО, НО И </span>
+                <br>
+                <span>МЕСТНОГО ПРОИЗВОДСТВА!</span>
+              </p>
+            </div>
           </div>
           <div class="icon icon--souvenir">
-            <img src="img/icon-burger.svg" width="40" height="35" alt="Еда">
-            <p class="title">
-              <b>ЕДА</b>
-            </p>
-            <p class="description">
-              <span>ВСЕГДА ЗАКАЗЫВАЙТЕ </span>
-              <br>
-              <span> ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ </span>
-              <br>
-              <span> РАЗОЧАРУЕТЕСЬ!</span>
-            </p>
+            <div class="icon-image">
+              <img src="img/icon-burger.svg" width="40" height="35" alt="Еда">
+            </div>
+            <div class="icon-text">
+              <p class="title">
+                <b>ЕДА</b>
+              </p>
+              <p class="description">
+                <span>ВСЕГДА ЗАКАЗЫВАЙТЕ </span>
+                <br>
+                <span> ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ </span>
+                <br>
+                <span> РАЗОЧАРУЕТЕСЬ!</span>
+              </p>
+            </div>
           </div>
         </div>
 
@@ -146,11 +162,11 @@
             </p>
           </div>
           <div class="main-bridge">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/main-bridge-tablet.svg">
-            <img src="img/main-bridge-mobile@1x.jpg" width="100%" height="auto" alt="Мост дьявола">
-          </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet.svg">
+              <img src="img/main-bridge-mobile@1x.jpg" width="100%" height="auto" alt="Мост дьявола">
+            </picture>
           </div>
         </div>
 
@@ -222,30 +238,32 @@
           </div>
         </div>
 
-        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419120.60621330905!2d-112.0012613!3d34.8466846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sdz!4v1592320038511!5m2!1sen!2sdz" width="320" height="350" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0" title="Карта местоположения города"></iframe>
+        <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419120.60621330905!2d-112.0012613!3d34.8466846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sdz!4v1592320038511!5m2!1sen!2sdz" width="auto" height="350" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0" title="Карта местоположения города"></iframe>
       </main>
 
       <footer class="page-footer">
         <div class="footer-info">
           #VISITSEDONA
         </div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a class="social-button" href="twitter.com">
-              <img src="img/icon-twitter.svg" width="17" height="15" alt="Twitter" aria-label="Twitter page">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="facebook.com">
-              <img src="img/icon-facebook.svg" width="9" height="19" alt="Facebook" aria-label="Facebook page">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-button" href="youtube.com">
-              <img src="img/icon-youtube.svg" width="20" height="14" alt="YouTube" aria-label="YouTube channel">
-            </a>
-          </li>
-        </ul>
+        <div class="footer-list">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button" href="twitter.com">
+                <img src="img/icon-twitter.svg" width="17" height="15" alt="Twitter" aria-label="Twitter page">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="facebook.com">
+                <img src="img/icon-facebook.svg" width="9" height="19" alt="Facebook" aria-label="Facebook page">
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button" href="youtube.com">
+                <img src="img/icon-youtube.svg" width="20" height="14" alt="YouTube" aria-label="YouTube channel">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="academy">
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-link">
             <span class="academy-logo-title">
