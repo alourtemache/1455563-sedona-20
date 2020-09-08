@@ -3,23 +3,35 @@
   width: 100%;
 }
 
+@media (max-width: @mobile-width) {
+  .icon {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+  }
+
+}
+
 @media (min-width: @tablet-width) {
   .icon {
-    width: 33%;
     text-align: center;
   }
 
   .icon--housing {
+    width: 33%;
     grid-column: 1/2;
     grid-row: 1/2;
   }
 
   .icon--food {
+    width: 33%;
     grid-column: 2/3;
     grid-row: 1/2;
   }
 
-  .icon-souvenir {
+  .icon--souvenir {
+
+    width: 33%;
     grid-column: 3/4;
     grid-row: 1/2;
   }

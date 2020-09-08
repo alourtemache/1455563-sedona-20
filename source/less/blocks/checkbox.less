@@ -1,0 +1,29 @@
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox:checked + .check-box {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.checkbox:hover + .check-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @border-gray;
+}
+
+.checkbox:disabled + .check-box {
+    background-color: @buttom-gray;
+}
+
+.checkbox:checked:disabled + .check-box {
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: @buttom-gray;
+}
