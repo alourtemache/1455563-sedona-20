@@ -1,20 +1,25 @@
 .town-features-item {
-  background-color: var(--light-gray);
+  border-bottom: @line-gray;
+}
+@media (max-width: @mobile-width) {
+  .town-features-item {
+    border-bottom: 1px solid @line-gray;
+  }
 }
 
 @media (min-width: @tablet-width) {
-.town-features-item--area {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
+  .town-features-item--area {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 
-.town-features-item--road {
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
+  .town-features-item--road {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-.town-features-item--tourist {
-  grid-column: 3/4;
-  grid-row: 1/2;
-}
+  .town-features-item--tourist {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 }

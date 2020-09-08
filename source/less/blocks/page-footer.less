@@ -4,22 +4,23 @@
   font-style: normal;
   text-align: center;
   text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-}
-
-@media(max-width: @tablet-width) {
-  .page-footer {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
+  padding-top: 40px;
+  padding-bottom: 23px;
 }
 
 @media (min-width: @tablet-width) {
-.page-footer {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  .page-footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 120px;
+  }
 }
+
+@media(min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

@@ -1,34 +1,8 @@
 .check-list {
+  color: @basic-black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
   padding-left: 48px;
-}
-.checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-.check-box {
-  position: absolute;
-  width: 46px;
-  height: 46px;
-  background-color: @form-gray;
-  margin-left: -48px;
-}
-
-.checkbox:checked + .check-box {
-  background-image: url(img/icon-tick.svg);
-}
-
-.checkbox:hover + .check-box {
-  background-image: url(img/icon-tick.svg);
-  background-color: @input-gray;
-}
-
-.checkbox:disabled + .check-box {
-  background-color: @buttom-gray;
-}
-
-.checkbox:checked:disabled + .check-box {
-  background-image: url(img/icon-tick.svg);
-  background-color: @buttom-gray;
 }
