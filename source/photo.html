@@ -14,7 +14,7 @@
   <body class="photo">
     <div class="container">
       <header class="page-header">
-        <nav>
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="page-header--wrapper">
             <ul class="navigation">
               <li class="navigation-block">
@@ -39,11 +39,15 @@
             <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
           </picture>
         </a>
-        <div class="burger"></div>
+        <button class="burger" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
       </header>
 
       <main class="main-page main-page--photo">
-        <div class="greeting">
+        <div class="greeting greeting-photo">
           <div class="greeting-back"></div>
           <div class="greeting-text greeting-text--photo">
             <picture>
@@ -68,12 +72,15 @@
           </p>
         </div>
 
-        <div class="photo-gallery">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="НЕРОДНЫЕ ПРОСТОРЫ">
-          </picture>
+        <div class="photo-gallery photo-gallery--sunset">
+          <div class="photo-sunset">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+              <img src="img/photo-sunset-mobile@1x.jpg" width="100%" height="auto" alt="НЕРОДНЫЕ ПРОСТОРЫ">
+            </picture>
+          </div>
+          <div class="photo-info">
           <p class="photo-name">
             НЕРОДНЫЕ ПРОСТОРЫ
           </p>
@@ -86,14 +93,18 @@
               1350
             </p>
           </div>
+          </div>
         </div>
 
-        <div class="photo-gallery">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
-          </picture>
+        <div class="photo-gallery photo-gallery--cactus">
+          <div class="photo-cactus">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+              <img src="img/photo-cactus-mobile@1x.jpg" width="100%" height="auto" alt="МЕСТНАЯ РАСТИТЕЛЬНОСТЬ">
+            </picture>
+          </div>
+          <div class="photo-info">
           <p class="photo-name">
             МЕСТНАЯ РАСТИТЕЛЬНОСТЬ
           </p>
@@ -106,14 +117,18 @@
               143
             </p>
           </div>
+          </div>
         </div>
 
-        <div class="photo-gallery">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="ДОРОГА НА СЕВЕР">
-          </picture>
+        <div class="photo-gallery photo-gallery--roads">
+          <div class="photo-roads">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+              <img src="img/photo-roads-mobile@1x.jpg" width="100%" height="auto" alt="ДОРОГА НА СЕВЕР">
+            </picture>
+          </div>
+          <div class="photo-info">
           <p class="photo-name">
             ДОРОГА НА СЕВЕР
           </p>
@@ -126,14 +141,18 @@
               96
             </p>
           </div>
+          </div>
         </div>
 
-        <div class="photo-gallery">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="МОСТ ДЬЯВОЛА">
-          </picture>
+        <div class="photo-gallery photo-gallery--bridge">
+          <div class="photo-bridge">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+              <img src="img/photo-bridge-mobile@1x.jpg" width="100%" height="auto" alt="МОСТ ДЬЯВОЛА">
+            </picture>
+          </div>
+          <div class="photo-info">
           <p class="photo-name">
             МОСТ ДЬЯВОЛА
           </p>
@@ -145,6 +164,7 @@
             <p class="likes-number">
               254
             </p>
+          </div>
           </div>
         </div>
 
@@ -160,8 +180,14 @@
             <br>
             ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!
           </p>
-
-          <img src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видео о Седоне">
+          <div class="video-sedona">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg">
+                <img src="img/video-mobile@1x.jpg" width="100%" height="auto" alt="Видео о Седоне">
+            </picture>
+          </div>
+          <div class="video-info"></div>
         </div>
 
       </main>
