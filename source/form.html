@@ -39,7 +39,11 @@
             <img src="img/logo-sedona-mobile.svg" width="100" height="84" alt="SEDONA">
           </picture>
         </a>
-        <div class="burger"></div>
+        <button class="burger" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
       </header>
 
       <main class="main-page main-page--form">
@@ -71,6 +75,7 @@
         </div>
 
         <div class="form-grid">
+
           <div class="formular">
             <b class="introduction introduction--name">ПРЕДСТАВЬТЕСЬ:</b>
 
@@ -119,21 +124,21 @@
               <li class="grid-choice introduction">
                 ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:
               </li>
-              <li class="grid-choice">
+              <li class="grid-choice grid-choice--radio">
                 <label for="positive" class="point">
                   <input type="radio" name="radio-point" class="answer-radio" id="positive" checked>
                   <span class="radio-box"></span>
                   Скорее положительное
                 </label>
               </li>
-              <li class="grid-choice">
+              <li class="grid-choice grid-choice--radio">
                 <label for="negative" class="point">
                   <input type="radio" name="radio-point" class="answer-radio" id="negative">
                   <span class="radio-box"></span>
                   Скорее отрицательное
                 </label>
               </li>
-              <li class="grid-choice">
+              <li class="grid-choice grid-choice--radio">
                 <label for="no-answer" class="point">
                   <input type="radio" name="radio-point" class="answer-radio" id="no-answer">
                   <span class="radio-box"></span>
