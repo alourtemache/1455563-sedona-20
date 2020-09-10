@@ -4,4 +4,19 @@
     grid-template-columns: 100%;
     grid-template-rows: 518px 206px 256px 330px 256px 256px auto;
   }
+
+  .main-page--photo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 228px 480px 347px 347px auto;
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-page--photo {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 287px 400px 267px 703px;
+  }
 }

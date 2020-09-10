@@ -1,28 +1,72 @@
 .photo-gallery {
     background-color: @basic-white;
     margin-top: 23px;
+}
+
+@media (max-width: @mobile-width) {
+  .photo-gallery {
     border-bottom: 1px solid @border-gray;
+  }
 }
 
-.photo-name {
-  color: @basic-black;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+@media (min-width:@tablet-width) {
+  .photo-gallery {
+    background-color: @form-gray;
+  }
+
+  .photo-gallery--sunset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .photo-gallery--cactus {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .photo-gallery--roads {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .photo-gallery--bridge {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
 }
 
-.author {
-  color: @basic-gray;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-}
+@media (min-width:@desktop-width) {
+  .photo-gallery {
+    background-color: @basic-white;
+  }
 
-.likes-number {
-  color: @basic-black;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  padding-left: 10px;
+  .photo-gallery--sunset {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .photo-gallery--cactus {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .photo-gallery--roads {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .photo-gallery--bridge {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }
