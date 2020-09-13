@@ -1,6 +1,32 @@
-.video-info {
+@media(max-width:@mobile-width) {
+  .video-info {
     background-color: @form-gray;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
     padding: 35px;
+  }
+
+  .video-info-repeat,
+  .video-info-sub,
+  .video-info-full {
+    fill: @video-gray;
+  }
+}
+
+@media(min-width: @tablet-width) {
+  .video-info {
+    background-color: @basic-black;
+    opacity: 0.6;
+    display: grid;
+    grid-template-columns: 10% 70% 10% 10%;
+    grid-template-rows: 60px;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 35px;
+  }
+  .video-info-repeat,
+  .video-info-sub,
+  .video-info-full {
+    fill: @basic-white;
+  }
 }
