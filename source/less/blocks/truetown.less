@@ -1,29 +1,23 @@
-.truetown,
-.bridge {
-    background-color: @basic-blue;
-}
-
 @media(min-width: @tablet-width) {
-  .truetown-text {
-    grid-column: 1/2;
-    grid-row: 3/4;
+  .truetown {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
     display: grid;
-    grid-template-columns: 33% 67%;
-    grid-template-rows: 256px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
   }
 }
 
 @media(min-width: @tablet-width) {
-  .truetown-text {
-    grid-column: 1/2;
-    grid-row: 3/4;
+  .truetown {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
-}
-
-.advantages {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 26px;
 }
 
 .digit,
