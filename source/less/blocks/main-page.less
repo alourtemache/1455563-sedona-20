@@ -1,7 +1,8 @@
+
 @media(min-width: @tablet-width) {
-  .main-page {
+  .main-page-index {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-rows: 518px 206px 256px 330px 256px 256px auto;
   }
 
@@ -14,9 +15,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-page-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 518px 206px 256px 330px 256px 256px auto;
+  }
+
   .main-page--photo {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 287px 400px 267px 703px;
+    grid-template-rows: 1fr 287px 400px 267px auto;
   }
 }
