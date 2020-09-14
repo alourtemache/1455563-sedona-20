@@ -1,0 +1,34 @@
+.social {
+  display: grid;
+  grid-template-columns: 46px 46px 46px;
+  align-content: center;
+  column-gap: 6px;
+  justify-content: center;
+  height: 120px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+
+  background-color: $light-blue;
+}
+
+.social__link {
+  display: flex;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    opacity: 0.3;
+  }
+}
+
+.social__item svg {
+  margin: auto;
+}

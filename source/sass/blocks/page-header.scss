@@ -1,0 +1,31 @@
+.page-header {
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  bottom: -28px;
+  left: calc((100% - #{$logo-width-mobile}) / 2);
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: calc((100% - #{$logo-width-desktop}) / 2);
+  }
+}
+
+.page-header__logo img {
+  vertical-align: middle;
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+    height: 96px;
+  }
+}
